@@ -32,7 +32,7 @@ public class DeleteContactByIDTests implements Helper {
         RequestBody requestBody = RequestBody.create(gson.toJson(contactDTO), JSON);
 
         Request request = new Request.Builder()
-                .url(BASE_URI + "/" + PATH + "/" + endpoint)
+                .url(BASE_URL + "/" + PATH + "/" + endpoint)
                 .addHeader(authHeader, TOKEN)
                 .post(requestBody)
                 .build();
@@ -51,7 +51,7 @@ public class DeleteContactByIDTests implements Helper {
     public void deleteContactByIDPositive() throws IOException {
 
         Request request = new Request.Builder()
-                .url(BASE_URI + "/" + PATH + "/" + endpoint + "/" + id)
+                .url(BASE_URL + "/" + PATH + "/" + endpoint + "/" + id)
                 .addHeader(authHeader, TOKEN)
                 .delete()
                 .build();

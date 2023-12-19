@@ -25,7 +25,7 @@ String endpoint = "user/login/usernamepassword";
 
   RequestBody requestBody = RequestBody.create( gson.toJson(requestDTO),JSON);
   Request request = new Request.Builder()
-          .url(BASE_URI + "/" + PATH + "/" + endpoint)
+          .url(BASE_URL + "/" + PATH + "/" + endpoint)
           .post(requestBody)
           .build();
 

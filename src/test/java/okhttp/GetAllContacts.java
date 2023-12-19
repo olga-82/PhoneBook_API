@@ -16,7 +16,7 @@ public class GetAllContacts  implements Helper {
 @Test
     public void testGetAllContactsPositive() throws IOException {
     Request request = new Request.Builder()
-            .url(BASE_URI + "/" + PATH + "/" + endpoint)
+            .url(BASE_URL + "/" + PATH + "/" + endpoint)
             .addHeader(authHeader,TOKEN)
             .build();
     Response response = client.newCall(request).execute();
