@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8a75df-2e17-43b9-b315-4b5714994e6b" name="Changes" comment="api">
-      <change afterPath="$PROJECT_DIR$/src/main/java/helper/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/okhttp/DeleteContactByIDTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/okhttp/PostAddContact.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/okhttp/RegistrationTests.java" afterDir="false" />
+    <list default="true" id="0d8a75df-2e17-43b9-b315-4b5714994e6b" name="Changes" comment="URL">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ContactResponseDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ContactResponseDTO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/GetAllContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/GetAllContacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/LoginTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dto/ErrorDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dto/ErrorDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/PostAddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/PostAddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/RegistrationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/RegistrationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,9 +50,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2Zl08mTznQwF4gVXA1Fux3bfQmt" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -64,16 +61,40 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Gradle.PostAddContact.AddNewContact">
+    <configuration name="DeleteContactByIDTests.deleteContactByIDPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;okhttp.DeleteContactByIDTests.deleteContactByIDPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="GetAllContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -98,54 +119,6 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetAllContacts.testGetAllContactsPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;okhttp.GetAllContacts.testGetAllContactsPositive&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="LoginTests.loginPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;okhttp.LoginTests.loginPositive&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="PostAddContact.AddNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -160,6 +133,30 @@
             <option value=":test" />
             <option value="--tests" />
             <option value="&quot;okhttp.PostAddContact.AddNewContact&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="RegistrationTests.registrationNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;okhttp.RegistrationTests.registrationNegative&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -197,10 +194,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.PostAddContact.AddNewContact" />
-        <item itemvalue="Gradle.GetAllContacts" />
-        <item itemvalue="Gradle.GetAllContacts.testGetAllContactsPositive" />
+        <item itemvalue="Gradle.RegistrationTests.registrationNegative" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
-        <item itemvalue="Gradle.LoginTests.loginPositive" />
+        <item itemvalue="Gradle.DeleteContactByIDTests.deleteContactByIDPositive" />
+        <item itemvalue="Gradle.GetAllContacts" />
       </list>
     </recent_temporary>
   </component>
@@ -229,13 +226,31 @@
       <option name="project" value="LOCAL" />
       <updated>1702995036583</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add tests">
+      <option name="closed" value="true" />
+      <created>1703007480354</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1703007480354</updated>
+    </task>
+    <task id="LOCAL-00004" summary="URL">
+      <option name="closed" value="true" />
+      <created>1703007742986</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1703007742986</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="gradle" />
     <MESSAGE value="api" />
-    <option name="LAST_COMMIT_MESSAGE" value="api" />
+    <MESSAGE value="add tests" />
+    <MESSAGE value="URL" />
+    <option name="LAST_COMMIT_MESSAGE" value="URL" />
   </component>
 </project>

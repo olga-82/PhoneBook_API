@@ -40,25 +40,15 @@ public class PostAddContact implements Helper {
                 .build();
 
         Response response = client.newCall(request).execute();
-        if(response.isSuccessful()){
 
             ContactResponseDTO responseDTO = gson.fromJson( response.body().string(), ContactResponseDTO.class);
+
+            Assert. assertTrue(response.isSuccessful());
             String message = responseDTO.getMessage();
-            System.out.println("Response cod is "+response.code());
             System.out.println(message);
-            Assert. assertTrue(response.isSuccessful());
+            String id = message.substring(message.lastIndexOf(" ") + 1);
+            System.out.println(id);
 
 
-//            String id = message.substring(message.lastIndexOf(" ") + 1);
-//            System.out.println(id);
-
-
-        }else{
-
-            System.out.println("Response cod is "+response.code());
-            ErrorDTO errorDTO = gson.fromJson( response.body().string(), ErrorDTO.class);
-            System.out.println( errorDTO.getStatus()+" "+errorDTO.getMessage()+" "+errorDTO.getError());
-            Assert. assertTrue(response.isSuccessful());
-        }
     }
 }
