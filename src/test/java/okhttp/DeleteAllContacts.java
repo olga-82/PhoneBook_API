@@ -1,11 +1,9 @@
 package okhttp;
 
-import dto.ContactDTO;
 import dto.ContactResponseDTO;
 import helper.Helper;
 import helper.HelperMethod;
 import okhttp3.Request;
-import okhttp3.RequestBody;
 import okhttp3.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -13,20 +11,21 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class DeleteContactByIDTests implements Helper {
+public class DeleteAllContacts implements Helper {
+    HelperMethod method = new HelperMethod();
+    String endpoint = "contacts/clear";
 
-    String endpoint = "contacts";
-    String id;
-HelperMethod method = new HelperMethod();
     @BeforeMethod
-    public void precondition() throws IOException {
-     id =  method.addNewContact();
+    public void preconditions() throws IOException {
+       method.addNewContact();
     }
+
+
     @Test
     public void deleteContactByIDPositive() throws IOException {
 
         Request request = new Request.Builder()
-                .url(BASE_URL + "/" + PATH + "/" + endpoint + "/" + id)
+                .url(BASE_URL + "/" + PATH + "/" + endpoint)
                 .addHeader(authHeader, TOKEN)
                 .delete()
                 .build();
