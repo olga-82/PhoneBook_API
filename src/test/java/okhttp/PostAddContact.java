@@ -5,6 +5,7 @@ import dto.ContactDTO;
 import dto.ContactResponseDTO;
 import dto.ErrorDTO;
 import helper.Helper;
+import helper.HelperMethod;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.RequestBody;
@@ -16,26 +17,17 @@ import java.io.IOException;
 
 import static okhttp.LoginTests.JSON;
 
-public class PostAddContact implements Helper {
+public class PostAddContact extends HelperMethod implements Helper {
+String token;
 
- String endpoint="contacts";
 
     @Test
     public void AddNewContact() throws IOException {
-        ContactDTO contactDTO =  ContactDTO.builder()
-                .name("rita")
-                .lastName("pupkina")
-                .email("pupkina"+i+"@gmail.com")
-                .phone("65748396"+i)
-                .address("Tel Aviv")
-                .description("sister")
-                .build();
-       // ID: c4eb123e-7cd2-4864-8d06-b8dcb49bf217
-
-        RequestBody requestBody = RequestBody.create( gson.toJson(contactDTO),JSON);
+        token = getToken();
+        RequestBody requestBody = RequestBody.create( gson.toJson(CONTACT_DTO),JSON);
         Request request = new Request.Builder()
-                .url(BASE_URL + "/" + PATH + "/" + endpoint)
-                .addHeader(authHeader,TOKEN)
+                .url(BASE_URL + "/" + PATH + "/" + endpointContacts)
+                .addHeader(authHeader,token)
                 .post(requestBody)
                 .build();
 

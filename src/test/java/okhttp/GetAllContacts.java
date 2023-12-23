@@ -4,20 +4,27 @@ package okhttp;
 import dto.ContactDTO;
 import dto.ContactListDTO;
 import helper.Helper;
+import helper.HelperMethod;
 import okhttp3.Request;
 import okhttp3.Response;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class GetAllContacts  implements Helper {
-  String endpoint = "contacts";
+public class GetAllContacts extends HelperMethod implements Helper {
+  String token;
+
+  @BeforeMethod
+  public void precondition() {
+      token=getToken();
+  }
 @Test
     public void testGetAllContactsPositive() throws IOException {
     Request request = new Request.Builder()
-            .url(BASE_URL + "/" + PATH + "/" + endpoint)
-            .addHeader(authHeader,TOKEN)
+            .url(BASE_URL + "/" + PATH + "/" + endpointContacts)
+            .addHeader(authHeader,token)
             .build();
     Response response = client.newCall(request).execute();
     Assert.assertTrue(response.isSuccessful(),"200");

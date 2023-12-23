@@ -14,10 +14,11 @@ import java.io.IOException;
 public class DeleteAllContacts implements Helper {
     HelperMethod method = new HelperMethod();
     String endpoint = "contacts/clear";
-
+    String token;
     @BeforeMethod
     public void preconditions() throws IOException {
-       method.addNewContact();
+        token=   method.getToken();
+         method.addNewContact();
     }
 
 
@@ -26,7 +27,7 @@ public class DeleteAllContacts implements Helper {
 
         Request request = new Request.Builder()
                 .url(BASE_URL + "/" + PATH + "/" + endpoint)
-                .addHeader(authHeader, TOKEN)
+                .addHeader(authHeader,token)
                 .delete()
                 .build();
 

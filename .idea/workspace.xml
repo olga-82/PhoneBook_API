@@ -4,7 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d8a75df-2e17-43b9-b315-4b5714994e6b" name="Changes" comment="URL" />
+    <list default="true" id="0d8a75df-2e17-43b9-b315-4b5714994e6b" name="Changes" comment="API">
+      <change afterPath="$PROJECT_DIR$/src/test/java/restassured/AddContactTestPOST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/restassured/DeleteAllContactsDELETE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/restassured/DeleteContactByIdDELETE.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/restassured/RegistrationTestPOST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/restassured/UpdateContactPUT.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/helper/HelperMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/helper/HelperMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/DeleteAllContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/DeleteAllContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/DeleteContactByIDTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/DeleteContactByIDTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/GetAllContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/GetAllContacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/PostAddContact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/PostAddContact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/okhttp/PutUpdContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/okhttp/PutUpdContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restassured/GetAllContacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restassured/AllContactsGET.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/restassured/LoginTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/restassured/LoginTestsPOST.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -44,6 +61,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -64,8 +84,8 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
 }</component>
-  <component name="RunManager" selected="Gradle.PostAddContact.AddNewContact">
-    <configuration name="DeleteContactByIDTests.deleteContactByIDPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.PutUpdContactTest.UpdateContactTestPositive">
+    <configuration name="AddContactTestPOST.addNewContactPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -78,7 +98,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;okhttp.DeleteContactByIDTests.deleteContactByIDPositive&quot;" />
+            <option value="&quot;restassured.AddContactTestPOST.addNewContactPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -89,7 +109,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="GetAllContacts" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="DeleteContactByIdDELETE.deleteContactById" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -102,7 +122,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;okhttp.GetAllContacts&quot;" />
+            <option value="&quot;restassured.DeleteContactByIdDELETE.deleteContactById&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -113,7 +133,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="PostAddContact.AddNewContact" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="PutUpdContactTest.UpdateContactTestPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -126,31 +146,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;okhttp.PostAddContact.AddNewContact&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RegistrationTests.registrationNegative" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":test" />
-            <option value="--tests" />
-            <option value="&quot;okhttp.RegistrationTests.registrationNegative&quot;" />
+            <option value="&quot;okhttp.PutUpdContactTest.UpdateContactTestPositive&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -185,13 +181,37 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="UpdateContactPUT.updateContactPositive" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+            <option value="--tests" />
+            <option value="&quot;restassured.UpdateContactPUT.updateContactPositive&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.PostAddContact.AddNewContact" />
-        <item itemvalue="Gradle.RegistrationTests.registrationNegative" />
+        <item itemvalue="Gradle.PutUpdContactTest.UpdateContactTestPositive" />
+        <item itemvalue="Gradle.UpdateContactPUT.updateContactPositive" />
+        <item itemvalue="Gradle.DeleteContactByIdDELETE.deleteContactById" />
+        <item itemvalue="Gradle.AddContactTestPOST.addNewContactPositive" />
         <item itemvalue="Gradle.RegistrationTests.registrationPositive" />
-        <item itemvalue="Gradle.DeleteContactByIDTests.deleteContactByIDPositive" />
-        <item itemvalue="Gradle.GetAllContacts" />
       </list>
     </recent_temporary>
   </component>
@@ -244,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703096296857</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="API">
+      <option name="closed" value="true" />
+      <created>1703246869625</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703246869625</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -253,17 +281,37 @@
     <MESSAGE value="api" />
     <MESSAGE value="add tests" />
     <MESSAGE value="URL" />
-    <option name="LAST_COMMIT_MESSAGE" value="URL" />
+    <MESSAGE value="API" />
+    <option name="LAST_COMMIT_MESSAGE" value="API" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/okhttp/LoginTests.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="com.github.evgenys91.machinet.common.dslhistory.DslHistoryState">
+    <option name="historyDtoById">
+      <map>
+        <entry key="da31d6">
+          <value>
+            <ChatHistoryModel>
+              <option name="contextFilesPaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/restassured/RegistrationTestPOST.java" />
+                </list>
+              </option>
+              <option name="id" value="da31d6" />
+              <option name="initiateTms" value="1703329672871" />
+              <option name="request" value="please add negativ test in AddContactTest class" />
+              <option name="response" value="" />
+              <option name="responseDescription" value="Sure! To add a negative test in the `RegistrationTestPOST` class, you can create a new test method that tests for a negative scenario. Here's an example of how you can modify the existing code:&#10;&#10;```java&#10;@Test&#10;public void testRegistrationNegative(){&#10;    given()&#10;        .log().all()&#10;        .body(INVALID_REG_BODY)&#10;        .contentType(ContentType.JSON)&#10;    .when()&#10;        .post(endpointReg)&#10;    .then()&#10;        .assertThat().statusCode(400);&#10;}&#10;```&#10;&#10;In this example, I've added a new test method called `testRegistrationNegative`. Inside this method, we send a request with an invalid registration body (`INVALID_REG_BODY`) and expect a response with a status code of 400 (Bad Request).&#10;&#10;Make sure to replace `INVALID_REG_BODY` with the actual invalid registration body that you want to test.&#10;&#10;Let me know if you need any further assistance!" />
+              <option name="responseFileName" value="" />
+              <option name="responseFilePath" value="" />
+              <option name="responseTms" value="1703329677438" />
+              <option name="usedLocalFilePaths">
+                <list>
+                  <option value="$PROJECT_DIR$/src/test/java/restassured/RegistrationTestPOST.java" />
+                </list>
+              </option>
+            </ChatHistoryModel>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -14,20 +14,21 @@ import org.testng.annotations.Test;
 import java.io.IOException;
 
 public class DeleteContactByIDTests implements Helper {
+     String token;
 
-    String endpoint = "contacts";
-    String id;
-HelperMethod method = new HelperMethod();
+     String id;
+    HelperMethod method = new HelperMethod();
     @BeforeMethod
     public void precondition() throws IOException {
      id =  method.addNewContact();
+     token= method.getToken();
     }
     @Test
     public void deleteContactByIDPositive() throws IOException {
 
         Request request = new Request.Builder()
-                .url(BASE_URL + "/" + PATH + "/" + endpoint + "/" + id)
-                .addHeader(authHeader, TOKEN)
+                .url(BASE_URL + "/" + PATH + "/" + endpointContacts + "/" + id)
+                .addHeader(authHeader, token)
                 .delete()
                 .build();
 
